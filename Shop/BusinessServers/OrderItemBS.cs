@@ -11,7 +11,6 @@
 namespace IIS.Shop
 {
     using System;
-    using System.Security.Cryptography;
     using System.Xml;
     
     
@@ -29,12 +28,12 @@ namespace IIS.Shop
     [ICSSoft.STORMNET.AccessType(ICSSoft.STORMNET.AccessType.none)]
     public class OrderItemBS : ICSSoft.STORMNET.Business.BusinessServer
     {
-
+        
         // *** Start programmer edit section *** (OrderItemBS CustomMembers)
         public const int TAXES = 10;
         // *** End programmer edit section *** (OrderItemBS CustomMembers)
 
-
+        
         // *** Start programmer edit section *** (OnUpdateOrderItem CustomAttributes)
 
         // *** End programmer edit section *** (OnUpdateOrderItem CustomAttributes)

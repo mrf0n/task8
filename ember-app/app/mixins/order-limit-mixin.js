@@ -8,9 +8,11 @@ export default Mixin.create({
         this._super(...arguments);
         return new Promise(async (resolve, reject) => {
           try {
+            //console.log(this.get('currentModel.id'));
             const builder = new Builder(this.get('store'), 'i-i-s-shop-invoice').select('id, order.id');
             const invoices = await this.get('store').query('i-i-s-shop-invoice', builder.build());
             const orderIdsIninvoices = invoices.map((i => i.get('order.id')));
+            // orderIdsIninvoices.push(cur);
             let resultPredicate = null;
             if (orderIdsIninvoices.length > 0) {
               resultPredicate = new SimplePredicate('id', FilterOperator.Neq, orderIdsIninvoices[0]);

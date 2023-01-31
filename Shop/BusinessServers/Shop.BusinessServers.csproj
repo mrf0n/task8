@@ -38,6 +38,10 @@
     <Reference Include="System.Xml">
       <HintPath>System.Xml.dll</HintPath>
     </Reference>
+    <ProjectReference Include="..\Objects\Shop.Objects.csproj">
+      <Project>{da3bdd6d-9d53-4c77-b5a9-274f13d27e31}</Project>
+      <Name>Shop.Objects</Name>
+    </ProjectReference>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.15\lib\net45\log4net.dll</HintPath>
     </Reference>
@@ -101,10 +105,6 @@
     <Reference Include="NewPlatform.Flexberry.ORM.UnityFactory">
       <HintPath>..\packages\NewPlatform.Flexberry.ORM.6.1.0-beta03\lib\net45\NewPlatform.Flexberry.ORM.UnityFactory.dll</HintPath>
     </Reference>
-    <ProjectReference Include="..\Objects\Shop.Objects.csproj">
-      <Project>{da3bdd6d-9d53-4c77-b5a9-274f13d27e31}</Project>
-      <Name>Shop.Objects</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OrderItemBS.cs">
@@ -112,6 +112,9 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
+    <Compile Include="OrderBS.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

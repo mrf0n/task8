@@ -116,6 +116,7 @@ module.exports = function(environment) {
         flexberryObjectlistview: {
           // Flag indicates whether to side page or usually mode.
           useSidePageMode: true,
+          defaultPerPage: 5,
         },
 
         // Settings for flexberry-lookup component.

@@ -1,6 +1,6 @@
 import EditFormController from 'ember-flexberry/controllers/edit-form';
 import generateUniqueId from 'ember-flexberry-data/utils/generate-unique-id';
-
+import Builder from 'ember-flexberry-data/query/builder';
 export default EditFormController.extend({
   parentRoute: 'i-i-s-shop-invoice-l',
 
